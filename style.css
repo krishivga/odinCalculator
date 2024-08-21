@@ -1,0 +1,183 @@
+/* Variables */
+:root {
+    --background-main: #1E201E;
+    --background-secondary: #3C3D37;
+    --highlight: #697565;
+    --highlight-light: #ECDFCC;
+    --hightlight-hover: #626D5E;
+    --background-main-hover: #141514;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    font-family: Roboto;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+/* Body responsiveness setup */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* Aligning items */
+/* Aligning the calculator */
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aligning Screen */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* Aligning buttons */
+.calculator-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.buttons-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons-body {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.buttons-operators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: .3rem;
+    align-items: center;
+}
+
+.buttons-keys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Creating a calculator */
+.calculator-container {
+    width: 420px;
+    height: 530px;
+}
+
+/* Screen */
+.calculator-screen {
+    width: 92%;
+    height: 30%;
+    background-color: var(--background-main);
+    padding: 0 4%;
+}
+
+.screen-text {
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+    height: 40%;
+}
+
+.screen-working {
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    height: 20%;
+}
+
+/* Buttons */
+.calculator-buttons {
+    width: 100%;
+    height: 70%;
+    background-color: var(--background-secondary);
+    padding: 1% 0;
+}
+
+.buttons-upper {
+    width: 93%;
+    height: 20%;
+}
+
+/* Lower Button sections */
+.buttons-body {
+    width: 93%;
+    height: 75%;
+}
+
+.buttons-operators {
+    width: 30%;
+    height: 100%;
+}
+
+.buttons-keys {
+    width: 70%;
+    height: 95%;
+    background-color: var(--background-secondary);
+    gap: .5rem;
+}
+
+
+/* Upper buttons */
+.upper-button {
+    width: 45%;
+    height: 80%;
+    color: var(--background-main);
+    background-color: var(--highlight-light);
+    border: none;
+    border-radius: 18px;
+    font-size: 2.2rem;
+}
+
+/* Lower Buttons */
+.keys-button {
+    width: 8rem;
+    height: 6rem;
+}
+
+.operator-button {
+    height: 4.7rem;
+    width: 85%;
+    background-color: var(--highlight);
+    color: var(--highlight-light);
+    border: 0;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+
+.keys-button {
+    border: 0px;
+    border-radius: 9px;
+    background-color: var(--background-main);
+    color: var(--highlight-light);
+}
+
+.operator-button:hover {
+    background-color: var(--hightlight-hover);
+}
+
+.keys-button:hover {
+    background-color: var(--background-main-hover);
+}
